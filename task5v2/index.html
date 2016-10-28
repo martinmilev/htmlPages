@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FormValidation</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="validator.js"></script>
+	</head>
+
+	<body>
+		<form>
+			<fieldset>
+				<legend>Form</legend>
+			  	<input class="field" id="firstname" type="text" pattern="[A-Za-z]{1,15}" placeholder="First Name" required>
+
+			  	<input class="field" id="lirstname" type="text" pattern="[A-Za-z]{1,15}" placeholder="Last Name" required>
+
+			  	<input class="field" id="egn" type="text" pattern="[0-9]{10,10}" placeholder="EGN" required>
+			  		
+			  	<input class="field" id="age" type="number" pattern="[0-9]{18,118}" placeholder="Age" required>
+
+			  	<input class="field" id="address" type="text" pattern="{1,100}" placeholder="Adress" required>
+			  	
+			  	<input class="field" id="password" type="password" pattern="[0-9A-Za-z]{6,18}" placeholder="Password" required>
+
+			  	<input type="submit" id="submit">
+			</fieldset>
+		</form>
+	</body>
+</html> 

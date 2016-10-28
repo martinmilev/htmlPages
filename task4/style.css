@@ -1,0 +1,15 @@
+body {
+	text-align: center;
+	font-family: Arial;
+}
+h1 {
+	font-size: 22px;
+	margin-top: 50px;
+}
+
+submit {
+	display: block;
+	margin: 20px;
+	width: 80px;
+	height: 30px;
+}

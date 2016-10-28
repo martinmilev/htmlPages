@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 28px Arial, sans-serif;
+}
+
+body {
+	background: white;
+}
+
+#calculator {
+	width: 460px;
+	height: 460px;
+	
+	margin: 200px auto;
+	padding: 10px;
+	
+	background: #4D79A0;
+	border-radius: 5px;
+	box-shadow: 0px 8px #324E67;
+}
+
+.top .screen {
+	height: 85px;
+	width: 313px;
+	
+	float: right;
+	
+	margin-right: 5px;
+	padding: 0 10px;
+	
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 5px rgba(0, 0, 0, 0.2);
+	
+	/* Typography */
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+.keys, .top {overflow: hidden;}
+
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+
+	background: #81B3E0;
+	box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+	
+	cursor: pointer;
+	
+	width: 100px;
+	height: 80px;
+	
+	border-radius: 5px;
+	
+	margin: 0 7px 11px 0;
+	
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	
+	/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+.keys span.operator {
+	margin-right: 0;
+}
+
+.keys span.equals {
+	width: 208px;
+	background: #73C4A5;
+	box-shadow: 0px 5px #03925C;
+	color: white;
+}
+
+.top span.clear {
+	background: #ff9fa8;
+	box-shadow: 0px 5px #ff7c87;
+	color: white;
+}
+
+.keys span:hover {
+	background: #5391C8;
+	box-shadow: 0px 5px #0D508C;
+	color: white;
+}
+
+.keys span.equals:hover {
+	background: #1EBE82;
+	box-shadow: 0px 5px #008352;
+	color: #white;
+}
+
+.top span.clear:hover {
+	background: #f68991;
+	box-shadow: 0px 5px #d3545d;
+	color: white;
+}
+
+.keys span:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys span.equals:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
+
+.top span.clear:active {
+	box-shadow: 0px 0px #d3545d;
+	top: 4px;
+}

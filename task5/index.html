@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FormValidation</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="validator.js"></script>
+	</head>
+
+	<body>
+		<form onsubmit="return validateForm()">
+			<fieldset>
+				<legend>Form</legend>
+			  	<input class="field" id="firstname" type="text" placeholder="First Name" value="">
+			  	<p class="err" id="fnameErr">Name must be in English between 1 and 15 symbols.</p>
+
+			  	<input class="field" id="lastname" type="text" placeholder="Last Name" value="">
+			  	<p class="err" id="lnameErr">Name must be in English between 1 and 15 symbols.</p>
+
+			  	<input class="field" id="egn" type="text" placeholder="EGN" value="">
+			  	<p class="err" id="egnErr">Please enter nvalid EGN.(10 digits)</p>
+			  		
+			  	<input class="field" id="age" type="number" placeholder="Age" value="">
+			  	<p class="err" id="ageErr">Please enter valid age.</p>
+
+			  	<input class="field" id="address" type="text" placeholder="Adress" value="">
+			  	<p class="err" id="addressErr">Please enter valid address.</p>
+			  	
+			  	<input class="field" id="password" type="password" placeholder="Password" value="">
+			  	<p class="err" id="pswdErr">Please enter valid password. (6-18 symbols)</p>
+			  	
+			  	<input class="field" id="validatePassword" type="password" placeholder="Validate Password" value="">
+			  	<p class="err" id="pswd2Err">Passwords should match!</p>
+
+			  	<input type="submit" id="submit">
+			</fieldset>
+		</form>
+	</body>
+</html> 
